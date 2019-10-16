@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS cmsproject_db;
+CREATE DATABASE cmsproject_db;
+
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
+
+DROP DATABASE IF EXISTS example_db;
+CREATE DATABASE example_db;

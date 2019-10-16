@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Welcome User </title>
+  <!--Fonts-->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js" type="text/javascript"></script>
+
+  <!-- Bootstrap core CSS -->
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/floating-labels/">
+  <link href="./styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color:rgb(148, 201, 148)">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav-item text-black">
+          <span class=" nav-link  alert-link glyphicon glyphicon-user" id="name"> </span>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item text-black">
+              <span class="nav-link alert-link large pointer" id="searchbyCategory">Search by Category</span>
+            </li>
+            <li class="nav-item text-black">
+              <span class="nav-link alert-link large pointer" id="searchbyauthor">Search by Author</span>
+            </li>
+            <li class="nav-item text-black">
+              <a href="/logout"><span class="nav-link alert-link glyphicon glyphicon-log-out"></span> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- search by category -->
+
+  <div class="modal fade" tabindex="-1" role="dialog1" id="modal_category">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><strong>Search by Category</strong></h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="error" style="text-align: center"></div>
+                  <label>Select a Category</label>
+                  <select class="custom-select my-1 mr-sm-2" id="searchcat">
+                    <option selected>Languages</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Python">Python</option>
+                    <option value="Bootsrap">Bootsrap</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Node">Node</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="user-search-box">
+              <div id="errorsearchby"></div>
+              <button type="button" class="btn btn-success btn-lg my-1" id="book-search-btn">Submit</button>
+            </div>
+            <button type="button" class="btn btn-success btn-lg my-1 " data-dismiss="modal"
+              style="float:right">Close</button><br>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search by author  -->
+  <div class="modal fade" tabindex="-1" role="dialog2" id="modal_authorcategory">
+    <div class="modal-dialog modal-dialog-centered" role="document1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><strong>Search by Author</strong></h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="error1" style="text-align: center"></div>
+                  <label>Select a Category</label>
+                  <select class="custom-select " id="searchcat1">
+                    <option selected>Languages</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Python">Python</option>
+                    <option value="Bootsrap">Bootsrap</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Node">Node</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label>Search by:</label>
+                  <select class="custom-select" id="searchby1">
+                    <option selected>Select</option>
+                    <option value="Author">Author</option>
+                    <option value="title">Title</option>
+                    <option value="PD">Published Date</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <input class="form-control mr-sm-2" type="search" id="book-search1" size="50"
+                    placeholder="Enter the Search parameter.." />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="errorsearchby1"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-success btn-lg my-1" id="book-search-btn1">Submit</button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-success btn-lg my-1 " data-dismiss="modal"
+                    style="float:right">Close</button><br>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="books-container" id="books">
+    <div class="row hide-row">
+      <div class="col-md-8" id="books-area">
+      </div>
+    </div>
+  </div>
+
+  <!-- model goes here -->
+  <!-- Modal goes here -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><strong></strong></h2>
+        </div>
+        <div class="modal-body">
+          <img id="match-img" height="200" alt="https://static.pexels.com/photos/20787/pexels-photo.jpg">
+          <h6 id="match-name" style="font-size:15px">Title</h6>
+          <h6 id="match-author" style="font-size:15px">Author</h6>
+          <h6 id="match-link" style="font-size:15px"></h6>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/book.js"></script>
+
+</body>
+
+</html>

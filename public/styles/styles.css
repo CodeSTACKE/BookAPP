@@ -1,0 +1,451 @@
+.list-group-item {
+  line-height: 2.5;
+}
+
+html,
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  background-color: #f4f4f4;
+  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-position: bottom left;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+p {
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  color: white;
+  margin-top: 90px;
+}
+
+.toggle {
+  display: none;
+}
+
+.tabs {
+  width: 200px;
+  height: 75vh;
+  margin-top: 85px;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.tabs::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+}
+
+.tabs::-webkit-scrollbar-track {
+  background-color: #484848;
+  border-radius: 20px;
+}
+
+.books-content {
+  width: calc(100% - 300px);
+  float: right;
+  margin-top: 20px;
+}
+
+.input-bar:focus,
+.input-bar:active {
+  outline: none4
+}
+
+.submit {
+  display: none;
+}
+
+.books-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 23px 50px 35px;
+}
+
+.search-bar {
+  margin: 0 60px;
+}
+
+.search-container {
+  width: 570px;
+  padding: 10px 25px;
+  border-radius: 23px;
+  background-color: #e5e5e5;
+}
+
+.search-container i {
+  color: #888888;
+  font-size: 12px;
+  margin-right: 11px;
+}
+
+.input-bar {
+  background-color: #e5e5e5;
+  border: 0;
+  font-weight: 600;
+  height: 24px;
+  letter-spacing: 0.2px;
+  width: 95%;
+  color: #191919;
+  font-size: 14px;
+}
+
+.input-bar:focus,
+.input-bar:active {
+  outline: none;
+}
+
+.active {
+  color: white;
+}
+
+/* li:hover {
+  color: green;
+
+} */
+
+.zoom {
+  /* padding: 20px; */
+  /* background-color: green; */
+  transition: transform .2s;
+  /* Animation */
+  /* width: 130px;
+  height: 30px;
+  margin: 0 auto; */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.selector {
+  top: 0px;
+  left: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid white;
+  position: absolute;
+}
+
+#books-span:hover {
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 50px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+
+.loginForm {
+  margin-left: 14%;
+  margin-bottom: 12%;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  height: 300px;
+}
+
+.welcomeTitle {
+  text-align: center;
+
+}
+
+.headertext {
+  color: rgb(182, 178, 178);
+}
+
+.new-user-link {
+  margin-left: 50px;
+}
+
+.navbar {
+  margin-bottom: 0%;
+}
+
+#user-display-page {
+
+  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-position: bottom left;
+}
+
+.logoutStyle {
+  margin-left: 2%;
+  font-weight: 24px;
+}
+
+.profile-style {
+  margin-left: 50%;
+}
+
+.user-search-box {
+  text-align: center;
+  float: center;
+  margin-bottom: 5%;
+}
+
+#book-search {
+  margin-top: 40px;
+}
+
+.form-inline {
+  margin-left: 35%;
+  /* margin-top: 2%; */
+  color: white;
+}
+
+.category {
+  margin-left: 34%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+#book-search-btn {
+  /* margin-top: 10%; */
+  /* margin-left: -550px; */
+}
+
+.info-row {
+  background: lightgray;
+  margin-right: 30px;
+}
+
+#books-area {
+  /* overflow:scroll; */
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.search-container-2 {
+  margin-left: auto;
+  padding: 10px 25px;
+  border-radius: 23px;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.display-container {
+  height: 100%;
+  width: 100%;
+}
+
+.book-div {
+  width: 50%;
+  height: 30%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.book-div:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+}
+
+.text {
+  float: right;
+}
+
+.mr-2 {
+  /* margin-left: -500px; */
+  color: white;
+  text-align: center;
+  padding: 40px;
+  /* width: 30px; */
+}
+
+.searchby {
+  margin-left: -380px;
+  padding: 40px;
+  width: 30px;
+}
+
+
+
+#book-search-btn {
+  float: left;
+
+}
+
+.custom-control-label {
+  margin-left: -200px;
+  margin-top: 80px;
+}
+
+/* /* .container {
+  width: 100%;
+  /* margin-left: 10%; */
+}
+
+.my-1 mr-2 {
+  margin-left: -200px;
+  color: white;
+  text-align: center;
+  margin-top: -60px;
+}
+
+#categorydiv {
+  display: none;
+}
+
+#commentdiv {
+  display: none;
+}
+
+#adminSide {
+  width: 11rem;
+  height: 200px;
+  margin-left: 5px;
+  font-size: 20px;
+  float: left;
+
+}
+
+.adminMain {
+  width: 70%;
+  height: 700px;
+  margin-left: 270px;
+  margin-top: 50px;
+  font-size: 20px;
+  float: left;
+
+}
+
+.author-container {
+  color: white;
+  align-items: center;
+  word-spacing: 2px;
+}
+
+table {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 75%;
+  overflow-y: hidden;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(20, 218, 46);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(57, 148, 92);
+}
+
+
+.col-6 {
+  height: 280px;
+  padding-left: 0px;
+}
+
+.info-text {
+  line-height: 2;
+  padding-top: 5px;
+}
+
+.book-title {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 30px;
+
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 25px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 30px, 35px, 35px, 36px;
+  text-align: center;
+  /* background-color: #f1f1f1; */
+  height: 150px;
+  width: 200px;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
