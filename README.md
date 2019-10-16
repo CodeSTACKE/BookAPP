@@ -7,12 +7,7 @@
 An App which helps to make an online community centered around programmers and their 
 favorite IT books.
   
-  #### OUR GROUP MEMBERS
-  
-  1. Andrew Griswold 
-  2. Joel Hernandez 
-  3. Jyoti Das
-  4. Nikita Mehata
+ 
   
   ## The link is below:
 
@@ -33,7 +28,7 @@ This application demonstrates a simple full stack application with a front end i
 
 To run the application locally, first clone this repository with the following command.
 
-  https://github.com/joel-a-hernandez/Project2
+ 
 	
 Next, install the application dependencies.
 
